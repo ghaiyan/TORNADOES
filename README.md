@@ -17,13 +17,26 @@ you can use fanc tool by accessing https://vaquerizaslab.github.io/fanc/api/anal
 
 ## step4.generate the sub-compartments using CALDER tool.
 
-you can use CALDER tool by accessing https://github.com/CSOgroup/CALDER
+you can use CALDER tool by accessing https://github.com/CSOgroup/CALDER to get the chrX_sub_compartments.bed using Hi-C file with (start_location, end_location, contact_value).
 
-## step5.generate or process the hypergraph and A/B compartments, sub-compartments.
+library(CALDER)
+for (chr in 1:22) {
+  chr_filename <- paste0("/home/rstudio/calder/gm12878/chr", chr, "_vc_50kb.hic")
+  out_dir <- paste0("./gm12878/chr", chr)
+  
+  CALDER_main(chr_filename, chr=chr, bin_size=50E3, out_dir=out_dir, sub_domains=TRUE, save_intermediate_data=FALSE)
+}
+
+
+## step5: process the epi files.
+
+run analysis_epi.py.
+
+## step6.generate or process the hypergraph and A/B compartments, sub-compartments.
 run scripts of example/3-data_process.ipynb
 
-## step6.Hypergraph learning was used to generate sub-compartments, and the similarity was compared with fanc and CALDER A/B compartment and su-compartment.
+## step7.Hypergraph learning was used to generate sub-compartments, and the similarity was compared with fanc and CALDER A/B compartment and su-compartment.
 run scripts of example/4-hypergraph.ipynb
 
-## step7. plot figures
+## step8. plot figures
 run scripts of Landmark position.ipynb
