@@ -19,13 +19,19 @@ you can use fanc tool by accessing https://vaquerizaslab.github.io/fanc/api/anal
 
 you can use CALDER tool by accessing https://github.com/CSOgroup/CALDER to get the chrX_sub_compartments.bed using Hi-C file with (start_location, end_location, contact_value).
 
+
 library(CALDER)
+
 for (chr in 1:22) {
+
   chr_filename <- paste0("/home/rstudio/calder/gm12878/chr", chr, "_vc_50kb.hic")
+
   out_dir <- paste0("./gm12878/chr", chr)
   
   CALDER_main(chr_filename, chr=chr, bin_size=50E3, out_dir=out_dir, sub_domains=TRUE, save_intermediate_data=FALSE)
+
 }
+
 
 
 ## step5: process the epi files.
