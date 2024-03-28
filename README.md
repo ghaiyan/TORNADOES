@@ -158,7 +158,8 @@ https://www.encodeproject.org/files/ENCFF354VWZ/@@download/ENCFF354VWZ.bed.gz
     
 10. Different types of chip-seq signal values
 
-
+# all experiment data and code
+all experiment data and code can be downloaded from http://mged.nmdms.ustb.edu.cn/storage/data/28658183.
 ## step1.The Hi-C matrix with resolution of 1Mb, 50kb and 25kb was extracted by juicer tool.
 The IMR90 data sets for example, hic format file to download from https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/.
 generate tuple format:
