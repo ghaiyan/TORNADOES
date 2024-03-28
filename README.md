@@ -44,5 +44,11 @@ run scripts of example/3-data_process.ipynb
 ## step7.Hypergraph learning was used to generate sub-compartments, and the similarity was compared with fanc and CALDER A/B compartment and su-compartment.
 run scripts of example/4-hypergraph.ipynb
 
+Or you can change the data of code "example/3-dataprocess.py", and run "python example/3-dataprocess.py"
+
 ## step8. plot figures
 run scripts of Landmark position.ipynb
+
+## step9 evaluete 
+run scripts of "example/5-evalute-anchor-factors.py" and "example/6-evalute-factors-density.py"
+
