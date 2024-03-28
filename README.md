@@ -5,82 +5,138 @@
 Figure 1. Workflow of the TORNADOES method. (a) Workflow of analyzing the chromatin domains. (b) Workflow of generating the clusters based on hypergraph learning.
 ## datasets: Hi-C and ChIP-seq data.
 Cell line	Data type	Data linker
-GM12878	Hi-C	https://data.4dnucleome.org/files-processed/4DNFI1UEG1HD/
+GM12878	
 
-	H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF087YCU/@@download/ENCFF087YCU.bigWig
+Hi-C	https://data.4dnucleome.org/files-processed/4DNFI1UEG1HD/
+
+H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF087YCU/@@download/ENCFF087YCU.bigWig
 https://www.encodeproject.org/files/ENCFF367KIF/@@download/ENCFF367KIF.bed.gz
 
-	H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF480KNX/@@download/ENCFF480KNX.bigWig
+H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF480KNX/@@download/ENCFF480KNX.bigWig
 https://www.encodeproject.org/files/ENCFF188SZS/@@download/ENCFF188SZS.bed.gz
-	H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF533NIQ/@@download/ENCFF533NIQ.bigWig
+
+ H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF533NIQ/@@download/ENCFF533NIQ.bigWig
 https://www.encodeproject.org/files/ENCFF682WIQ/@@download/ENCFF682WIQ.bed.gz
-	CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF680XUD/@@download/ENCFF680XUD.bigWig
+
+ CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF680XUD/@@download/ENCFF680XUD.bigWig
 https://www.encodeproject.org/files/ENCFF827JRI/@@download/ENCFF827JRI.bed.gz
-	POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF532WJA/@@download/ENCFF532WJA.bigWig
+
+ POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF532WJA/@@download/ENCFF532WJA.bigWig
 https://www.encodeproject.org/files/ENCFF886PSD/@@download/ENCFF886PSD.bed.gz
-	RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF940IMA/@@download/ENCFF940IMA.bed.gz
-	SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF837YJA/@@download/ENCFF837YJA.bed.gz
-	EZH2 ChIP-seq	https://www.encodeproject.org/files/ENCFF339YTO/@@download/ENCFF339YTO.bed.gz
-	H3K36me3	https://www.encodeproject.org/files/ENCFF268HMO/@@download/ENCFF268HMO.bed.gz
-	H3K4me1	https://www.encodeproject.org/files/ENCFF321BVG/@@download/ENCFF321BVG.bed.gz
-H1-hESC	Hi-C	https://data.4dnucleome.org/files-processed/4DNFI2TK7L2F/
-	H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF390JIZ/@@download/ENCFF390JIZ.bigWig
+
+ RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF940IMA/@@download/ENCFF940IMA.bed.gz
+
+ SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF837YJA/@@download/ENCFF837YJA.bed.gz
+
+ EZH2 ChIP-seq	https://www.encodeproject.org/files/ENCFF339YTO/@@download/ENCFF339YTO.bed.gz
+
+ H3K36me3	https://www.encodeproject.org/files/ENCFF268HMO/@@download/ENCFF268HMO.bed.gz
+
+ H3K4me1	https://www.encodeproject.org/files/ENCFF321BVG/@@download/ENCFF321BVG.bed.gz
+ 
+H1-hESC
+
+Hi-C	https://data.4dnucleome.org/files-processed/4DNFI2TK7L2F/
+
+ H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF390JIZ/@@download/ENCFF390JIZ.bigWig
 https://www.encodeproject.org/files/ENCFF045CUG/@@download/ENCFF045CUG.bed.gz
-	H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF301RJN/@@download/ENCFF301RJN.bigWig
+
+ H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF301RJN/@@download/ENCFF301RJN.bigWig
 https://www.encodeproject.org/files/ENCFF277AOQ/@@download/ENCFF277AOQ.bed.gz
-	H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF562HZQ/@@download/ENCFF562HZQ.bigWig
+
+ H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF562HZQ/@@download/ENCFF562HZQ.bigWig
 https://www.encodeproject.org/files/ENCFF918VFL/@@download/ENCFF918VFL.bed.gz
-	CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF147GRN/@@download/ENCFF147GRN.bigWig
+
+ CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF147GRN/@@download/ENCFF147GRN.bigWig
 https://www.encodeproject.org/files/ENCFF821AQO/@@download/ENCFF821AQO.bed.gz
-	POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF942TZX/@@download/ENCFF942TZX.bigWig
+
+ POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF942TZX/@@download/ENCFF942TZX.bigWig
 https://www.encodeproject.org/files/ENCFF322DAE/@@download/ENCFF322DAE.bed.gz
-	RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF883FUW/@@download/ENCFF883FUW.bed.gz
-	H3K36me3	https://www.encodeproject.org/files/ENCFF504KOV/@@download/ENCFF504KOV.bed.gz
-	H3K4me1	https://www.encodeproject.org/files/ENCFF006PXB/@@download/ENCFF006PXB.bed.gz
-K562	Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/dcfcb009-f006-4ab8-a4c7-af72be58c12c/4DNFITUOMFUQ.hic
-	H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF094XCU/@@download/ENCFF094XCU.bigWig
+
+ RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF883FUW/@@download/ENCFF883FUW.bed.gz
+
+ H3K36me3	https://www.encodeproject.org/files/ENCFF504KOV/@@download/ENCFF504KOV.bed.gz
+
+ H3K4me1	https://www.encodeproject.org/files/ENCFF006PXB/@@download/ENCFF006PXB.bed.gz
+
+K562	
+
+Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/dcfcb009-f006-4ab8-a4c7-af72be58c12c/4DNFITUOMFUQ.hic
+
+H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF094XCU/@@download/ENCFF094XCU.bigWig
 https://www.encodeproject.org/files/ENCFF038DDS/@@download/ENCFF038DDS.bed.gz
-	H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF845BFY/@@download/ENCFF845BFY.bigWig
+
+H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF845BFY/@@download/ENCFF845BFY.bigWig
 https://www.encodeproject.org/files/ENCFF909PMV/@@download/ENCFF909PMV.bed.gz
-	H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF559MMQ/@@download/ENCFF559MMQ.bigWig
+
+H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF559MMQ/@@download/ENCFF559MMQ.bigWig
 https://www.encodeproject.org/files/ENCFF371GMJ/@@download/ENCFF371GMJ.bed.gz
-	CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF268ZPN/@@download/ENCFF268ZPN.bigWig
+
+CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF268ZPN/@@download/ENCFF268ZPN.bigWig
 https://www.encodeproject.org/files/ENCFF221SKA/@@download/ENCFF221SKA.bed.gz
-	POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF914WIS/@@download/ENCFF914WIS.bigWig
+
+ POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF914WIS/@@download/ENCFF914WIS.bigWig
 https://www.encodeproject.org/files/ENCFF355MNE/@@download/ENCFF355MNE.bed.gz
-	RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF930WPG/@@download/ENCFF930WPG.bed.gz
-	SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF289LLT/@@download/ENCFF289LLT.bed.gz
-	EZH2	https://www.encodeproject.org/files/ENCFF804RVA/@@download/ENCFF804RVA.bed.gz
-	H3K36me3	https://www.encodeproject.org/files/ENCFF053DAC/@@download/ENCFF053DAC.bed.gz
-	H3K4me1	https://www.encodeproject.org/files/ENCFF759NWD/@@download/ENCFF759NWD.bed.gz
-IMR90	Hi-C	https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/
-	H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF907GKJ/@@download/ENCFF907GKJ.bigWig
+
+ RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF930WPG/@@download/ENCFF930WPG.bed.gz
+
+ SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF289LLT/@@download/ENCFF289LLT.bed.gz
+
+ EZH2	https://www.encodeproject.org/files/ENCFF804RVA/@@download/ENCFF804RVA.bed.gz
+
+ H3K36me3	https://www.encodeproject.org/files/ENCFF053DAC/@@download/ENCFF053DAC.bed.gz
+
+ H3K4me1	https://www.encodeproject.org/files/ENCFF759NWD/@@download/ENCFF759NWD.bed.gz
+ 
+IMR90
+
+Hi-C	https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/
+
+ H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF907GKJ/@@download/ENCFF907GKJ.bigWig
 https://www.encodeproject.org/files/ENCFF730BVO/@@download/ENCFF730BVO.bed.gz
-	H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF811ZFE/@@download/ENCFF811ZFE.bigWig
+
+ H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF811ZFE/@@download/ENCFF811ZFE.bigWig
 https://www.encodeproject.org/files/ENCFF018CAH/@@download/ENCFF018CAH.bed.gz
-	H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF733CJA/@@download/ENCFF733CJA.bigWig
+
+ H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF733CJA/@@download/ENCFF733CJA.bigWig
 https://www.encodeproject.org/files/ENCFF098XMT/@@download/ENCFF098XMT.bed.gz
-	CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF895EDK/@@download/ENCFF895EDK.bigWig
+
+ CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF895EDK/@@download/ENCFF895EDK.bigWig
 https://www.encodeproject.org/files/ENCFF307XFM/@@download/ENCFF307XFM.bed.gz
-	POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF444OMD/@@download/ENCFF444OMD.bigWig
+
+ POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF444OMD/@@download/ENCFF444OMD.bigWig
 https://www.encodeproject.org/files/ENCFF448ZOJ/@@download/ENCFF448ZOJ.bed.gz
-	H3K36me3	https://www.encodeproject.org/files/ENCFF449ADN/@@download/ENCFF449ADN.bed.gz
-	H3K4me1	https://www.encodeproject.org/files/ENCFF611UWF/@@download/ENCFF611UWF.bed.gz
-HepG2	Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/25104375-a588-46e6-a382-663cee6c332f/4DNFICSTCJQZ.hic
-	H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF847MVG/@@download/ENCFF847MVG.bigWig
+
+ H3K36me3	https://www.encodeproject.org/files/ENCFF449ADN/@@download/ENCFF449ADN.bed.gz
+
+ H3K4me1	https://www.encodeproject.org/files/ENCFF611UWF/@@download/ENCFF611UWF.bed.gz
+
+HepG2
+
+Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/25104375-a588-46e6-a382-663cee6c332f/4DNFICSTCJQZ.hic
+
+ H3K27ac ChIP-seq	https://www.encodeproject.org/files/ENCFF847MVG/@@download/ENCFF847MVG.bigWig
 https://www.encodeproject.org/files/ENCFF886SZT/@@download/ENCFF886SZT.bed.gz
-	H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF359LQU/@@download/ENCFF359LQU.bigWig
+
+ H3K4me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF359LQU/@@download/ENCFF359LQU.bigWig
 https://www.encodeproject.org/files/ENCFF185WOB/@@download/ENCFF185WOB.bed.gz
-	H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF284AIG/@@download/ENCFF284AIG.bigWig
+
+ H3K9me3 ChIP-seq	https://www.encodeproject.org/files/ENCFF284AIG/@@download/ENCFF284AIG.bigWig
 https://www.encodeproject.org/files/ENCFF353MWR/@@download/ENCFF353MWR.bed.gz
-	CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF105VBF/@@download/ENCFF105VBF.bigWig
+
+ CTCF ChIP-seq	https://www.encodeproject.org/files/ENCFF105VBF/@@download/ENCFF105VBF.bigWig
 https://www.encodeproject.org/files/ENCFF612ZUY/@@download/ENCFF612ZUY.bed.gz
-	POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF425QWO/@@download/ENCFF425QWO.bigWig
+
+ POLR2A ChIP-seq	https://www.encodeproject.org/files/ENCFF425QWO/@@download/ENCFF425QWO.bigWig
 https://www.encodeproject.org/files/ENCFF354VWZ/@@download/ENCFF354VWZ.bed.gz
-	RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF304NRB/@@download/ENCFF304NRB.bed.gz
-	SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF028OBL/@@download/ENCFF028OBL.bed.gz
-	H3K36me3	https://www.encodeproject.org/files/ENCFF489ZNJ/@@download/ENCFF489ZNJ.bed.gz
-	H3K4me1	https://www.encodeproject.org/files/ENCFF532AGT/@@download/ENCFF532AGT.bed.gz
+
+ RAD21 ChIP-seq	https://www.encodeproject.org/files/ENCFF304NRB/@@download/ENCFF304NRB.bed.gz
+
+ SMC3 ChIP-seq	https://www.encodeproject.org/files/ENCFF028OBL/@@download/ENCFF028OBL.bed.gz
+
+ H3K36me3	https://www.encodeproject.org/files/ENCFF489ZNJ/@@download/ENCFF489ZNJ.bed.gz
+
+ H3K4me1	https://www.encodeproject.org/files/ENCFF532AGT/@@download/ENCFF532AGT.bed.gz
 
 
 ## step1.The Hi-C matrix with resolution of 1Mb, 50kb and 25kb was extracted by juicer tool.
