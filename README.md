@@ -139,6 +139,25 @@ https://www.encodeproject.org/files/ENCFF354VWZ/@@download/ENCFF354VWZ.bed.gz
 
  H3K4me1	https://www.encodeproject.org/files/ENCFF532AGT/@@download/ENCFF532AGT.bed.gz
 
+# Main steps:
+1. Download the data set
+   
+3. Extract Hi-C data
+   
+4. Identify 2 types of TAD at different degrees
+
+5. Identify sub-compartment in calder
+   
+6. Identify AB area with fanc tool
+
+7. Process AB data
+    
+8. process and generate the result
+
+9. The proportion of different chip-seq peaks anchored by different classes
+    
+10. Different types of chip-seq signal values
+
 
 ## step1.The Hi-C matrix with resolution of 1Mb, 50kb and 25kb was extracted by juicer tool.
 The IMR90 data sets for example, hic format file to download from https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/.
