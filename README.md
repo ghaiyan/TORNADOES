@@ -5,7 +5,8 @@
 Figure 1. Workflow of the TORNADOES method. (a) Workflow of analyzing the chromatin domains. (b) Workflow of generating the clusters based on hypergraph learning.
 ## datasets: Hi-C and ChIP-seq data.
 Cell line	Data type	Data linker
-GM12878	
+
+**GM12878	:**
 
 Hi-C	https://data.4dnucleome.org/files-processed/4DNFI1UEG1HD/
 
@@ -34,7 +35,7 @@ https://www.encodeproject.org/files/ENCFF886PSD/@@download/ENCFF886PSD.bed.gz
 
  H3K4me1	https://www.encodeproject.org/files/ENCFF321BVG/@@download/ENCFF321BVG.bed.gz
  
-H1-hESC
+**H1-hESC:**
 
 Hi-C	https://data.4dnucleome.org/files-processed/4DNFI2TK7L2F/
 
@@ -59,7 +60,7 @@ https://www.encodeproject.org/files/ENCFF322DAE/@@download/ENCFF322DAE.bed.gz
 
  H3K4me1	https://www.encodeproject.org/files/ENCFF006PXB/@@download/ENCFF006PXB.bed.gz
 
-K562	
+**K562	:**
 
 Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/dcfcb009-f006-4ab8-a4c7-af72be58c12c/4DNFITUOMFUQ.hic
 
@@ -88,7 +89,7 @@ https://www.encodeproject.org/files/ENCFF355MNE/@@download/ENCFF355MNE.bed.gz
 
  H3K4me1	https://www.encodeproject.org/files/ENCFF759NWD/@@download/ENCFF759NWD.bed.gz
  
-IMR90
+**IMR90:**
 
 Hi-C	https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/
 
@@ -111,7 +112,7 @@ https://www.encodeproject.org/files/ENCFF448ZOJ/@@download/ENCFF448ZOJ.bed.gz
 
  H3K4me1	https://www.encodeproject.org/files/ENCFF611UWF/@@download/ENCFF611UWF.bed.gz
 
-HepG2
+**HepG2:**
 
 Hi-C	https://4dn-open-data-public.s3.amazonaws.com/fourfront-webprod/wfoutput/25104375-a588-46e6-a382-663cee6c332f/4DNFICSTCJQZ.hic
 
