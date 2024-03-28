@@ -1,4 +1,7 @@
 # A Method for chromatin domain partitioning based on hypergraph clustering
+
+![image](https://github.com/ghaiyan/TORNADOES/assets/27917393/18d3985b-ba0a-4070-813d-70339cdbd22c)
+Figure 1. Workflow of the TORNADOES method. (a) Workflow of analyzing the chromatin domains. (b) Workflow of generating the clusters based on hypergraph learning.
 ## step1.The Hi-C matrix with resolution of 1Mb, 50kb and 25kb was extracted by juicer tool.
 The IMR90 data sets for example, hic format file to download from https://data.4dnucleome.org/files-processed/4DNFIH7TH4MF/.
 generate tuple format:
